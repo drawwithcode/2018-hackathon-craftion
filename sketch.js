@@ -29,6 +29,8 @@ function setup() {
 function draw() {
   // put drawing code here
   background(0);
+
+  //music
   var volume = 0;
   if (mySong.isPlaying() == false) {
     mySong.play();
