@@ -79,24 +79,24 @@ function draw() {
   pop();
 
   push();
-  ell2 = new star(100, 200, volume * 1.5, color('#19FFF6'), -frameCount * 3);
+  ell2 = new star(-150, -350, volume * 1.5, color('#19FFF6'), -frameCount * 3);
   pop();
   push();
-  ell2 = new star(100, 200, volume * 0.75, color('#B0FFFD'), -frameCount * 3);
-  pop();
-
-  push();
-  ell3 = new star(300, 200, volume * 2, color('#00FFAE'), -frameCount * 3);
-  pop();
-  push();
-  ell3 = new star(300, 200, volume, color('#82FFD2'), -frameCount * 3);
+  ell2 = new star(-150, -350, volume * 0.75, color('#B0FFFD'), -frameCount * 3);
   pop();
 
   push();
-  ell4 = new star(300, 400, volume * 2, color('#FF19D1'), -frameCount * 3);
+  ell3 = new star(300, -200, volume * 2, color('#00FFAE'), -frameCount * 3);
   pop();
   push();
-  ell4 = new star(300, 400, volume, color('#FF6BEE'), -frameCount * 3);
+  ell3 = new star(300, -200, volume, color('#82FFD2'), -frameCount * 3);
+  pop();
+
+  push();
+  ell4 = new star(280, 400, volume * 2, color('#FF19D1'), -frameCount * 3);
+  pop();
+  push();
+  ell4 = new star(280, 400, volume, color('#FF6BEE'), -frameCount * 3);
   pop();
 
   //logo
