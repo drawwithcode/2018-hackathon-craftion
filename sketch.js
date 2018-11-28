@@ -6,10 +6,12 @@ var lin3;
 var lin4;
 var ell;
 var ell2
-
+var myImage;
 function preload() {
   // put preload code here
   mySong = loadSound("./assets/gumball.mp3");
+  myImage = loadImage("./assets/gumballlogo.png");
+
 }
 
 function setup() {
@@ -49,7 +51,7 @@ function draw() {
   ellipse(width / 2, height / 2, volume * 25);
   pop();
   push();
-  ell= new star(200,200,volume,color('#FF19D1'),frameCount * 3);
+  ell= new star(200,300,volume,color('#FF19D1'),frameCount * 3);
   pop();
   push();
   ell1= new star(100,100,volume,color('#19FFF6'),frameCount * 3);
@@ -63,6 +65,9 @@ function draw() {
   push();
   ell3= new star(300,200,volume*2,color('#00FFAE'),-frameCount * 3);
   pop();
+  push();
+  ell4= new star(300,400,volume*2,color('#FF19D1'),-frameCount * 3);
+  pop();
   // push();
   // lin1 = new lin(50, 0, 250, volume * 2, -frameCount, width / 2, height / 2);
   // pop();
@@ -72,6 +77,12 @@ function draw() {
   // push();
   // lin3 = new lin(50, 80, 50, volume * 2, -frameCount * 3, width / 2, height / 2);
   // pop();
+  push();
+  imageMode(CENTER);
+  translate(width/2,height/2);
+  rotate(frameCount*4);
+  image(myImage,0,0, volume*2, volume);
+  pop();
 
 }
 
